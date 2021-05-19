@@ -3,7 +3,7 @@ require('dotenv').config();
 const {ApolloServer} = require('apollo-server');
 const typeDefs = require('./schema');
 const resolvers =require('./resolvers');
-const {isEmail} =require('isemail');
+const isEmail =require('isemail');
 
 const {createStore} =require ('./utils');
 const LaunchAPI =require('./datasources/launch');

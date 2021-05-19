@@ -52,7 +52,7 @@ type LaunchConnection{
 }
 
 type Mutation{
-    bookTrips(lauchIds: ID!) :TripUpdateResponse
+    bookTrips(launchIds: [ID]!) :TripUpdateResponse
     cancelTrip(launchId: ID!) :TripUpdateResponse
     login(email: String) :User
 }
